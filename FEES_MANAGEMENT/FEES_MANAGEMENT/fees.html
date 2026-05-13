@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AUCA Fees Management</title>
+    <!--
+        NOTE: This file shows the HTML structure only.
+        The working version is fees.php — open that in your browser.
+        This file is here so you can see the HTML separately.
+    -->
+    <link rel="stylesheet" href="fees.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Admissions</a>
+        <a href="#">Academics</a>
+        <a href="#">Media Center</a>
+        <a href="#">Research</a>
+        <a href="#">AUCA Alumni</a>
+    </div>
+
+    <!-- ===== MAIN WRAPPER ===== -->
+    <div class="main-wrapper">
+
+        <!-- System Title -->
+        <div class="system-title">
+            ADVENTIST UNIVERSITY OF CENTRAL AFRICA STUDENTS FEES MANAGEMENT SYSTEM
+        </div>
+
+        <!-- Message area -->
+        <div class="msg-success" id="msg"></div>
+
+        <!-- ===== CONTENT AREA ===== -->
+        <div class="content-area">
+
+            <!-- LEFT: Input Fields -->
+            <div class="left-col">
+
+                <div class="form-row">
+                    <label>STUDENT NAMES:</label>
+                    <input type="text" name="student_name" id="student_name">
+                </div>
+
+                <div class="form-row">
+                    <label>STUDENT-ID:</label>
+                    <input type="text" name="student_id" id="student_id">
+                </div>
+
+                <div class="form-row">
+                    <label>ACADEMIC YEAR:</label>
+                    <input type="text" name="academic_year" id="academic_year">
+                </div>
+
+                <div class="form-row">
+                    <label>NO OF COURSES:</label>
+                    <input type="number" name="no_of_courses" id="no_of_courses">
+                </div>
+
+                <div class="form-row">
+                    <label>TOTAL CREDITS:</label>
+                    <input type="number" name="total_credits" id="total_credits">
+                </div>
+
+                <div class="form-row">
+                    <label>AMOUNT PER CREDIT:</label>
+                    <input type="number" name="amount_per_credit" id="amount_per_credit">
+                </div>
+
+                <div class="form-row">
+                    <label>REGISTRATION FEES:</label>
+                    <input type="number" name="registration_fees" id="registration_fees">
+                </div>
+
+                <div class="form-row">
+                    <label>FINAL PROJECT:</label>
+                    <input type="number" name="final_project" id="final_project">
+                </div>
+
+                <div class="form-row">
+                    <label>GRADUATION FEES:</label>
+                    <input type="number" name="graduation_fees" id="graduation_fees">
+                </div>
+
+                <!-- Calculate Total Fees Row -->
+                <div class="calc-row">
+                    <input type="button" value="CALCULATE TOTAL FEES" id="calcBtn">
+                    <input type="text" name="total_fees" id="total_fees" readonly style="width:80px;">
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Display Area -->
+            <div class="right-col" id="display-area">
+                <!-- Retrieved records will appear here -->
+            </div>
+
+        </div>
+
+        <!-- ===== ACTION BUTTONS (top right of content) ===== -->
+        <div style="padding: 0 10px 5px; display:flex; justify-content:flex-end; gap:5px;">
+            <input type="button" value="UPDATE FEES">
+            <input type="button" value="DELETE">
+            <input type="button" value="DISPLAY">
+        </div>
+
+        <!-- ===== BOTTOM BUTTONS ===== -->
+        <div class="btn-section">
+            <input type="button" value="SAVE DATA">
+            <input type="button" value="RETRIEVE DATA">
+            <input type="button" value="CANCEL">
+            <input type="button" value="PRINT">
+            <input type="button" value="EXIT">
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <div class="footer">
+            Copyright &copy; 2024 Adventist University of Central Africa. All Rights Reserved.
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Login Form</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!--
+        NOTE: This is the HTML structure only.
+        The actual form submission is handled by login.php
+        So open login.php in your browser, NOT this file.
+        This file is just here so you can see the HTML separately.
+    -->
+
+    <div class="login-wrapper">
+
+        <!-- Title Bar -->
+        <div class="login-title">STUDENTS LOGIN FORM</div>
+
+        <!-- Error message area (shown by PHP if login fails) -->
+        <div class="error-msg">
+            <!-- Example: Invalid username or password -->
+        </div>
+
+        <!-- Username Row -->
+        <div class="form-row">
+            <label>USER-NAME:</label>
+            <input type="text" name="username" required>
+        </div>
+
+        <!-- Password Row -->
+        <div class="form-row">
+            <label>PASSWORD:</label>
+            <input type="password" name="password" required>
+        </div>
+
+        <!-- Buttons Row -->
+        <div class="btn-row">
+            <input type="submit" name="login" value="LOGIN">
+            <input type="submit" name="exit" value="EXIT">
+        </div>
+
+    </div>
+
+</body>
+</html>
